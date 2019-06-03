@@ -1,0 +1,112 @@
+// forms
+
+form,
+fieldset {
+  margin: 0;
+  padding: 0;
+  border-style: none;
+}
+
+input[type='text'],
+input[type='tel'],
+input[type='email'],
+input[type='search'],
+input[type='password'],
+//input[type='url'],
+// input[type='date'],
+textarea {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  box-sizing: border-box;
+  border: 1px solid $form-element-border-color;
+  padding: $form-element-padding;
+
+  // &:hover {
+    
+  // }
+
+  &:focus {
+    border-color: $form-element-focus-border-color;
+  }
+
+  @include placeholder {
+    color: $placeholder-color;
+  }
+}
+
+select {
+  -webkit-border-radius: 0;
+}
+
+textarea {
+  resize: vertical;
+  vertical-align: top;
+}
+
+button,
+input[type='button'],
+input[type='reset'],
+input[type='file'],
+input[type='submit'] {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  cursor: pointer;
+}
+button,
+input[type='button'],
+input[type='reset'],
+input[type='file'],
+input[type='submit'],
+.btn {
+    color: $btn-color;
+    background: $btn-background;
+    padding: $btn-padding;
+    font-size: $btn-font-size;
+    border: 2px solid $btn-background;
+    line-height: 1.2;
+    border-radius: 5px;
+    position: relative;
+    font-weight: 500;
+    text-align: center;
+    display: inline-block;
+    &.btn-border {
+        background: none;
+    }
+    @include media("<tablet") {
+        font-size: 20px;
+    }
+    &:hover {
+        background: #ad2736;
+        border-color: #ad2736;
+    }
+    &.btn-blue {
+        background: $blue;
+        border-color: $blue;
+        &:hover {
+            background: #157fbc;
+            border-color: #157fbc;
+        }
+    }
+    &.btn-small {
+        padding: 7px 10px;
+        font-size: 19px;
+        &.btn-mail {
+            padding-right: 42px;
+            .ico {
+                right: 13px;
+                margin-top: -8px;
+            }
+        }
+    }
+}
+.mac {
+    .btn {
+        padding-top: 0.5em;
+        padding-bottom: 0.36em;
+        &.btn-small {
+            padding-top: 9px;
+            padding-bottom: 5px;
+        }
+    } 
+}
+

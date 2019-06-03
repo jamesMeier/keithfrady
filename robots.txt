@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /_backup
+
+User-agent: Googlebot
+Disallow: /_backup
