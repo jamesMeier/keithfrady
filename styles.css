@@ -1,0 +1,76 @@
+.nav-menu {
+	text-align: center;
+	padding: 0 15px;
+}
+
+.nav-menu > li {
+	display: inline-block;
+	padding: 0 13px;
+}
+
+.nav-menu > li a {
+	color: #a9c0db;
+	font-size: 19px;
+	line-height: 1.2;
+	font-weight: 200;
+	display: inline-block;
+	position: relative;
+	text-transform: capitalize;
+}
+
+.nav-menu > li a:before {
+	content: "";
+	width: 100%;
+	height: 6px;
+	background: #ca372c;
+	position: absolute;
+	bottom: -100%;
+	margin: 0 0 -8px;
+	left: 0;
+	opacity: 0;
+	-webkit-transition: opacity .5s ease-in-out;
+	transition: opacity .5s ease-in-out;
+}
+
+.nav-menu > li a.anchor-active:before,
+.nav-menu > li a:hover:before {
+	opacity: 1;
+}
+.nav-menu {
+	text-align: center;
+	padding: 0 15px;
+}
+
+.nav-menu > li {
+	display: inline-block;
+	padding: 0 13px;
+}
+
+.nav-menu > li a {
+	color: #a9c0db;
+	font-size: 19px;
+	line-height: 1.2;
+	font-weight: 200;
+	display: inline-block;
+	position: relative;
+	text-transform: capitalize;
+}
+
+.nav-menu > li a:before {
+	content: "";
+	width: 100%;
+	height: 6px;
+	background: #ca372c;
+	position: absolute;
+	bottom: -100%;
+	margin: 0 0 -8px;
+	left: 0;
+	opacity: 0;
+	-webkit-transition: opacity .5s ease-in-out;
+	transition: opacity .5s ease-in-out;
+}
+
+.nav-menu > li a.anchor-active:before,
+.nav-menu > li a:hover:before {
+	opacity: 1;
+}
